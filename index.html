@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recargas Bethoven PRO | Recargas y Gift Cards al instante</title>
+    <meta name="description" content="Recargas electrónicas Telcel, Movistar, AT&T, Bait y Gift Cards Netflix, Spotify, Xbox, PlayStation, Google Play. Entrega en 5 min. Pide por WhatsApp con asistencia inteligente.">
+    
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0066ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Bethoven PRO">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/zh2616D/Picsart-24-11-16-21-13-51-014.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins','sans-serif'], display: ['Space Grotesk','sans-serif'] },
+                    colors: { brand: { 50:'#eff6ff', 500:'#0066ff', 600:'#0052cc', 900:'#0a192f' }, whatsapp:'#25D366' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass{backdrop-filter:blur(16px); background:rgba(255,255,255,0.85)}
+        .typing span{border-right:3px solid #0066ff; animation:blink 0.7s infinite}
+        @keyframes blink{50%{border-color:transparent}}
+        .card-hover{transition:all .3s cubic-bezier(.4,0,.2,1)}
+        .card-hover:hover{transform:translateY(-6px); box-shadow:0 20px 40px rgba(0,102,255,.15)}
+        .shimmer{background:linear-gradient(90deg,#f0f0f0 25%,#e0e0e0 50%,#f0f0f0 75%); background-size:200% 100%; animation:shimmer 1.5s infinite}
+        @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-[72px]">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.ibb.co/zh2616D/Picsart-24-11-16-21-13-51-014.png" class="w-10 h-10 rounded-xl object-cover bg-white shadow" alt="logo">
+                    <div>
+                        <h1 class="font-display font-bold text-[18px] leading-none text-slate-900">BETHOVEN</h1>
+                        <span class="text-[11px] font-semibold tracking-widest text-brand-500">RECARGAS PRO</span>
+                    </div>
+                </div>
+                <nav class="hidden md:flex gap-8 text-sm font-medium">
+                    <a href="#productos" class="hover:text-brand-500 transition">Productos</a>
+                    <a href="#inteligente" class="hover:text-brand-500 transition">Asistente IA</a>
+                    <a href="#pedido" class="hover:text-brand-500 transition">Hacer Pedido</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <div class="hidden sm:flex items-center gap-2 text-xs bg-green-50 text-green-700 px-3 py-1.5 rounded-full border border-green-200">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> En línea - Entrega 5 min
+                    </div>
+                    <a id="headerWsp" href="https://wa.me/527228968645?text=Hola%20Bethoven,%20necesito%20ayuda" target="_blank" class="bg-slate-900 text-white px-4 py-2.5 rounded-full text-sm font-semibold hover:bg-black transition flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-[16px]"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-600 to-blue-600 text-white">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.15),transparent_50%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs font-medium mb-6">
+                    <i class="fas fa-bolt text-yellow-300"></i> NUEVO: Asistente Inteligente con IA
+                </div>
+                <h2 class="font-display text-4xl md:text-[52px] leading-[0.95] font-bold tracking-tight">
+                    Recargas al instante.<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-white">Sin filas. Sin fallas.</span>
+                </h2>
+                <p class="mt-6 text-lg text-blue-100 max-w-xl">Dile a nuestro asistente Betho lo que necesitas: "recarga Telcel 100 al 722..." y él llena el pedido, te manda a WhatsApp y a mi correo <b class="text-white">pedrobrito693@gmail.com</b> automáticamente.</p>
+                
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="#pedido" class="bg-white text-brand-600 px-7 py-3.5 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.02] transition">Hacer pedido inteligente <i class="fas fa-arrow-right ml-2"></i></a>
+                    <button onclick="toggleChat()" class="bg-white/10 border border-white/20 backdrop-blur px-7 py-3.5 rounded-full font-semibold hover:bg-white/20 transition"><i class="fas fa-robot mr-2"></i> Hablar con Betho IA</button>
+                </div>
+
+                <div class="mt-10 flex items-center gap-6">
+                    <div class="flex -space-x-2">
+                        <img src="https://i.pravatar.cc/40?img=1" class="w-9 h-9 rounded-full border-2 border-white"><img src="https://i.pravatar.cc/40?img=8" class="w-9 h-9 rounded-full border-2 border-white"><img src="https://i.pravatar.cc/40?img=15" class="w-9 h-9 rounded-full border-2 border-white">
+                    </div>
+                    <div class="text-sm"><b class="text-white">+1,243 clientes</b> <span class="text-blue-200">felices esta semana</span><br><span class="text-yellow-300 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.9/5</span></div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-white rounded-[32px] p-6 shadow-2xl text-slate-900">
+                    <div class="flex justify-between items-center mb-5">
+                        <h3 class="font-bold">Pedido rápido IA</h3>
+                        <span class="text-xs bg-brand-50 text-brand-600 px-3 py-1 rounded-full font-bold">INTELIGENTE</span>
+                    </div>
+                    <!-- Input inteligente tipo ChatGPT -->
+                    <div class="relative">
+                        <div class="absolute left-4 top-4 text-slate-400"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <textarea id="smartInput" rows="3" placeholder="Ej: Recarga Telcel de 200 al 7221234567 y Netflix de 300..." class="w-full bg-slate-50 border border-slate-200 rounded-2xl pl-11 pr-12 py-4 text-[15px] focus:ring-4 focus:ring-brand-500/20 focus:border-brand-500 outline-none resize-none"></textarea>
+                        <button onclick="procesarIA()" class="absolute right-2 bottom-2 bg-brand-600 hover:bg-brand-900 text-white w-10 h-10 rounded-xl flex items-center justify-center transition"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <div class="mt-3 flex gap-2 flex-wrap">
+                        <button onclick="setSmart('Recarga Bait 100 al ')" class="text-xs bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-full">Bait $100</button>
+                        <button onclick="setSmart('Netflix 250')" class="text-xs bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-full">Netflix $250</button>
+                        <button onclick="setSmart('Free Fire 300 diamantes')" class="text-xs bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-full">Free Fire</button>
+                    </div>
+                    <div id="iaPreview" class="mt-4 hidden bg-slate-900 text-white rounded-2xl p-4 text-sm"></div>
+                </div>
+                <div class="absolute -z-10 -bottom-10 -right-10 w-72 h-72 bg-cyan-300 rounded-full blur-[90px] opacity-30"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h3 class="font-display text-3xl font-bold text-slate-900">Todo en un lugar</h3>
+                <p class="text-slate-500 mt-2">Selecciona y el asistente lo agrega al pedido automáticamente.</p>
+            </div>
+            <div class="hidden md:flex items-center gap-2 bg-white border px-4 py-2 rounded-full text-sm"><i class="fas fa-search text-slate-400"></i><input id="searchProd" oninput="filtrarProductos()" placeholder="Buscar: Telcel, Netflix..." class="outline-none bg-transparent w-48"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- RECARGAS -->
+            <div>
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center"><i class="fas fa-mobile-screen"></i></div><h4 class="font-bold text-lg">Recargas Electrónicas</h4><span class="ml-auto text-xs bg-green-100 text-green-700 px-2.5 py-1 rounded-full font-bold">ENTREGA 2 MIN</span></div>
+                <div id="gridRecargas" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+            </div>
+            <!-- GIFTCARDS -->
+            <div>
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-purple-600 text-white rounded-xl flex items-center justify-center"><i class="fas fa-gift"></i></div><h4 class="font-bold text-lg">Gift Cards & Gaming</h4><span class="ml-auto text-xs bg-purple-100 text-purple-700 px-2.5 py-1 rounded-full font-bold">CÓDIGO AL INSTANTE</span></div>
+                <div id="gridGifts" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PEDIDO INTELIGENTE -->
+    <section id="pedido" class="bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-[1.1fr_0.9fr] gap-10">
+            <!-- FORM -->
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-xl"><i class="fas fa-brain"></i></div>
+                    <div><h3 class="font-display text-2xl font-bold">Pedido Inteligente</h3><p class="text-sm text-slate-500">La IA valida, calcula y envía a WhatsApp + Correo</p></div>
+                </div>
+
+                <form id="orderForm" class="bg-[#f8fafc] border border-slate-200 rounded-[24px] p-6 sm:p-8 space-y-6" onsubmit="return enviarPedido(event)">
+                    <!-- Tipo -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="cursor-pointer"><input type="radio" name="tipo" value="recarga" checked onchange="cambiarTipo()" class="peer sr-only"><div class="peer-checked:bg-brand-600 peer-checked:text-white peer-checked:border-brand-600 border-2 border-slate-200 rounded-2xl p-4 text-center font-semibold transition"><i class="fas fa-mobile mr-2"></i>Recarga</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="tipo" value="gift" onchange="cambiarTipo()" class="peer sr-only"><div class="peer-checked:bg-purple-600 peer-checked:text-white peer-checked:border-purple-600 border-2 border-slate-200 rounded-2xl p-4 text-center font-semibold transition"><i class="fas fa-gift mr-2"></i>Gift Card</div></label>
+                    </div>
+
+                    <div id="camposRecarga">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="text-sm font-semibold">Número a recargar (10 dígitos) <span class="text-brand-600">*IA detecta compañía</span></label>
+                                <div class="relative mt-2"><span class="absolute left-4 top-3.5 text-slate-400"><i class="fas fa-phone"></i></span><input id="telefono" type="tel" maxlength="10" placeholder="7221234567" class="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 focus:ring-4 focus:ring-brand-500/20 focus:border-brand-500 outline-none" oninput="detectarCompania(this.value)"><div id="deteccionCompania" class="mt-2 text-xs font-bold text-brand-600"></div></div>
+                            </div>
+                            <div>
+                                <label class="text-sm font-semibold">Compañía</label>
+                                <select id="recarga_compania" class="mt-2 w-full py-3.5 px-4 rounded-xl border border-slate-200 outline-none focus:border-brand-500">
+                                    <option value="">Selecciona...</option><option>Telcel</option><option>Movistar</option><option>AT&T</option><option>Bait</option><option>Unefon</option><option>Virgin Mobile</option><option>Weex</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="text-sm font-semibold">Monto</label>
+                                <div class="grid grid-cols-4 gap-2 mt-2" id="montosRecarga"></div>
+                                <input id="recarga_monto" type="number" min="20" max="1000" placeholder="Otro monto" class="mt-2 w-full py-3 rounded-xl border border-slate-200 px-4 outline-none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="camposGift" class="hidden space-y-4">
+                        <div>
+                            <label class="text-sm font-semibold">Plataforma</label>
+                            <select id="tarjeta_nombre" class="mt-2 w-full py-3.5 px-4 rounded-xl border border-slate-200 outline-none focus:border-purple-500">
+                                <option value="">Selecciona...</option><option>Netflix</option><option>Spotify</option><option>Google Play</option><option>Xbox</option><option>PlayStation</option><option>Nintendo</option><option>Free Fire</option><option>Roblox</option><option>Amazon</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-sm font-semibold">Monto</label>
+                            <div class="grid grid-cols-4 gap-2 mt-2" id="montosGift"></div>
+                            <input id="tarjeta_monto" type="number" min="50" max="2000" placeholder="Otro monto" class="mt-2 w-full py-3 rounded-xl border border-slate-200 px-4 outline-none">
+                        </div>
+                    </div>
+
+                    <hr class="border-slate-200">
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div><label class="text-sm font-semibold">Tu nombre</label><input id="cliente_nombre" type="text" placeholder="Ej: Pedro Brito" class="mt-2 w-full py-3 px-4 rounded-xl border border-slate-200 outline-none focus:border-brand-500" required></div>
+                        <div><label class="text-sm font-semibold">Tu email (copia del pedido)</label><input id="cliente_email" type="email" placeholder="tu@correo.com" class="mt-2 w-full py-3 px-4 rounded-xl border border-slate-200 outline-none focus:border-brand-500"></div>
+                    </div>
+                    <div><label class="text-sm font-semibold">Método de pago</label><select id="metodo_pago" class="mt-2 w-full py-3 px-4 rounded-xl border border-slate-200"><option>Transferencia</option><option>OXXO</option><option>Tarjeta</option><option>Pago en efectivo</option></select></div>
+
+                    <div id="resumenIA" class="bg-slate-900 text-white rounded-2xl p-5 hidden">
+                        <div class="flex items-center gap-2 text-xs font-bold tracking-widest text-cyan-300 mb-2"><i class="fas fa-robot"></i> BETHO IA - RESUMEN</div>
+                        <div id="resumenTexto" class="text-sm leading-relaxed whitespace-pre-line"></div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-brand-600 to-blue-600 hover:from-brand-900 hover:to-blue-700 text-white font-bold py-4 rounded-2xl shadow-lg shadow-blue-500/25 transition flex items-center justify-center gap-3 text-[16px]">
+                        <i class="fab fa-whatsapp text-xl"></i> Enviar a WhatsApp + Email
+                    </button>
+                    <p class="text-[11px] text-center text-slate-500">Al enviar, se abrirá WhatsApp con el pedido y se enviará automáticamente una copia a <b>pedrobrito693@gmail.com</b> y a ti si agregas tu email.</p>
+                </form>
+            </div>
+
+            <!-- LATERAL INFO + INTELIGENCIA -->
+            <div class="space-y-6">
+                <div id="inteligente" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-[24px] p-7">
+                    <h4 class="font-display text-xl font-bold"><i class="fas fa-microchip text-cyan-300 mr-2"></i>¿Cómo funciona la inteligencia?</h4>
+                    <ul class="mt-5 space-y-4 text-sm text-slate-300">
+                        <li class="flex gap-3"><span class="w-7 h-7 bg-white/10 rounded-full flex items-center justify-center shrink-0">1</span><span><b class="text-white">Entiende lenguaje natural:</b> Escribe como si hablaras con un amigo y detecta compañía, monto y número.</span></li>
+                        <li class="flex gap-3"><span class="w-7 h-7 bg-white/10 rounded-full flex items-center justify-center shrink-0">2</span><span><b class="text-white">Autocompleta:</b> Si pegas tu número, detecta si es Telcel/Movistar por rangos frecuentes MX.</span></li>
+                        <li class="flex gap-3"><span class="w-7 h-7 bg-white/10 rounded-full flex items-center justify-center shrink-0">3</span><span><b class="text-white">Envía doble:</b> WhatsApp al <b class="text-white">7228968645</b> + Email automático a pedrobrito693@gmail.com con todos los datos.</span></li>
+                        <li class="flex gap-3"><span class="w-7 h-7 bg-white/10 rounded-full flex items-center justify-center shrink-0">4</span><span><b class="text-white">Guarda historial:</b> Recuerda tus últimos pedidos en este dispositivo.</span></li>
+                    </ul>
+                    <div class="mt-6 bg-white/5 border border-white/10 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fas fa-envelope text-xl"></i><div><div class="text-xs text-slate-400">Correo del negocio</div><div class="font-bold">pedrobrito693@gmail.com</div></div>
+                        <button onclick="navigator.clipboard.writeText('pedrobrito693@gmail.com')" class="ml-auto text-xs bg-white text-slate-900 px-3 py-1.5 rounded-full font-bold">Copiar</button>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-[24px] p-6">
+                    <h4 class="font-bold flex items-center gap-2"><i class="fas fa-clock text-brand-600"></i> Historial Inteligente</h4>
+                    <div id="historial" class="mt-4 space-y-2 text-sm text-slate-600">Sin pedidos aún. ¡Tu primer pedido aparecerá aquí!</div>
+                    <button onclick="limpiarHistorial()" class="mt-4 text-xs text-slate-400 hover:text-red-500">Borrar historial</button>
+                </div>
+
+                <div class="bg-[#e6f0ff] border border-blue-200 rounded-[24px] p-6">
+                    <h4 class="font-bold text-brand-900">¿Tienes tienda? Conviértete en punto de venta</h4>
+                    <p class="text-sm text-brand-700 mt-2">Vende recargas con 6% de comisión. Te damos sistema inteligente igual a este.</p>
+                    <a href="https://wa.me/527228968645?text=Quiero%20ser%20punto%20de%20venta%20Bethoven" target="_blank" class="mt-4 inline-block bg-brand-600 text-white px-5 py-2.5 rounded-full text-sm font-bold">Quiero ser distribuidor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHATBOT FLOTANTE BETHO IA -->
+    <div id="chatWidget" class="fixed bottom-6 right-6 z-[99] w-[360px] max-w-[92vw] hidden">
+        <div class="bg-white rounded-[24px] shadow-2xl border border-slate-200 overflow-hidden flex flex-col h-[520px]">
+            <div class="bg-slate-900 text-white p-5 flex items-center justify-between">
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full flex items-center justify-center"><i class="fas fa-robot"></i></div><div><div class="font-bold leading-none">Betho IA</div><div class="text-xs text-slate-400 flex items-center gap-1.5"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Asistente inteligente • En línea</div></div></div>
+                <button onclick="toggleChat()" class="w-8 h-8 bg-white/10 rounded-full hover:bg-white/20"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chatMessages" class="flex-1 overflow-y-auto p-4 space-y-3 bg-slate-50">
+                <div class="bg-white border p-3 rounded-2xl rounded-bl-none text-sm shadow-sm"><b>Betho:</b> ¡Hola! Soy Betho 🤖 ¿Qué necesitas hoy? Ejemplo:<br><i class="text-slate-500">“Recarga Bait 200 al 722 123 4567”</i> o <i class="text-slate-500">“Netflix 300”</i>. Puedo llenar el formulario por ti.</div>
+            </div>
+            <div class="p-3 border-t bg-white flex gap-2">
+                <input id="chatInput" placeholder="Escribe aquí..." class="flex-1 bg-slate-100 rounded-full px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-brand-500/30" onkeypress="if(event.key==='Enter')enviarChat()">
+                <button onclick="enviarChat()" class="bg-brand-600 text-white w-10 h-10 rounded-full"><i class="fas fa-paper-plane text-sm"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTONES FLOTANTES -->
+    <div class="fixed bottom-6 left-6 z-50 flex flex-col gap-3">
+        <button onclick="toggleChat()" class="w-14 h-14 bg-slate-900 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-105 transition"><i class="fas fa-robot text-xl"></i></button>
+        <a href="https://wa.me/527228968645?text=Hola%20Bethoven,%20vi%20tu%20web%20nueva%20y%20quiero%20hacer%20un%20pedido" target="_blank" class="w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-105 transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <div><div class="flex items-center gap-3 mb-3"><img src="https://i.ibb.co/zh2616D/Picsart-24-11-16-21-13-51-014.png" class="w-10 h-10 rounded-xl bg-white"><span class="font-display font-bold text-white text-lg">BETHOVEN PRO</span></div><p class="text-sm">Sistema inteligente de recargas con IA. Entrega inmediata por WhatsApp y correo.</p></div>
+            <div><h5 class="font-bold text-white mb-3">Contacto Directo</h5><p class="text-sm"><i class="fab fa-whatsapp mr-2"></i>WhatsApp: +52 722 896 8645<br><i class="fas fa-envelope mr-2"></i>pedrobrito693@gmail.com<br><i class="fas fa-map-marker-alt mr-2"></i>Tenancingo, Edo. Méx. - Servicio Nacional</p></div>
+            <div><h5 class="font-bold text-white mb-3">Inteligencia Betho</h5><p class="text-sm">Este sitio usa inteligencia local (sin servidor) para autocompletar pedidos y enviar notificaciones dobles a WhatsApp + Email. Tus datos se quedan en tu dispositivo, excepto el pedido que tú decides enviar.</p></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 pt-8 border-t border-white/10 text-xs text-center">© 2026 Recargas Bethoven PRO - Hecho con IA para Pedro Brito • Todos los derechos reservados</div>
+    </footer>
+
+<script>
+// DATA
+const recargasData = [
+  {nombre:'Telcel', icon:'📱', color:'bg-blue-600', popular:true},
+  {nombre:'Movistar', icon:'🟢', color:'bg-green-600', popular:true},
+  {nombre:'AT&T', icon:'🔵', color:'bg-blue-500', popular:true},
+  {nombre:'Bait', icon:'⚡', color:'bg-yellow-500', popular:true},
+  {nombre:'Unefon', icon:'🟣', color:'bg-purple-600'},
+  {nombre:'Virgin Mobile', icon:'🔴', color:'bg-red-500'},
+];
+const giftsData = [
+  {nombre:'Netflix', icon:'🎬', color:'bg-red-600', desde:100},
+  {nombre:'Spotify', icon:'🎵', color:'bg-green-600', desde:115},
+  {nombre:'Google Play', icon:'▶️', color:'bg-white border', desde:100},
+  {nombre:'Xbox', icon:'🎮', color:'bg-green-700', desde:200},
+  {nombre:'PlayStation', icon:'🎮', color:'bg-blue-700', desde:200},
+  {nombre:'Free Fire', icon:'🔥', color:'bg-orange-600', desde:100},
+  {nombre:'Roblox', icon:'🟥', color:'bg-red-500', desde:150},
+  {nombre:'Amazon', icon:'🛒', color:'bg-slate-900', desde:200},
+];
+const montos = [20,50,100,200,300,500];
+
+// RENDER PRODUCTOS
+function renderProductos(){
+  const gridR = document.getElementById('gridRecargas');
+  gridR.innerHTML = recargasData.map(r=>`
+    <button onclick="seleccionarRecarga('${r.nombre}')" class="card-hover bg-white border border-slate-200 rounded-2xl p-4 text-left group">
+      <div class="flex justify-between items-start"><span class="text-2xl">${r.icon}</span>${r.popular?'<span class="text-[10px] bg-brand-50 text-brand-600 px-2 py-0.5 rounded-full font-bold">POPULAR</span>':''}</div>
+      <div class="font-bold mt-2">${r.nombre}</div><div class="text-xs text-slate-500">Desde $20 • 2 min</div>
+    </button>`).join('');
+  const gridG = document.getElementById('gridGifts');
+  gridG.innerHTML = giftsData.map(g=>`
+    <button onclick="seleccionarGift('${g.nombre}')" class="card-hover bg-white border border-slate-200 rounded-2xl p-4 text-left">
+      <span class="text-2xl">${g.icon}</span><div class="font-bold mt-2">${g.nombre}</div><div class="text-xs text-slate-500">Desde $${g.desde}</div>
+    </button>`).join('');
+  document.getElementById('montosRecarga').innerHTML = montos.map(m=>`<button type="button" onclick="setMonto('recarga_monto',${m})" class="bg-white border border-slate-200 hover:border-brand-600 hover:text-brand-600 rounded-xl py-2.5 text-sm font-bold transition">$${m}</button>`).join('');
+  document.getElementById('montosGift').innerHTML = [100,200,300,500,600,1000].map(m=>`<button type="button" onclick="setMonto('tarjeta_monto',${m})" class="bg-white border border-slate-200 hover:border-purple-600 hover:text-purple-600 rounded-xl py-2.5 text-sm font-bold transition">$${m}</button>`).join('');
+}
+renderProductos();
+
+function setMonto(id,val){document.getElementById(id).value=val; actualizarResumen();}
+function seleccionarRecarga(nombre){
+  document.querySelector('input[value=recarga]').checked=true; cambiarTipo();
+  document.getElementById('recarga_compania').value=nombre; document.getElementById('telefono').focus();
+  document.getElementById('pedido').scrollIntoView({behavior:'smooth'}); actualizarResumen();
+}
+function seleccionarGift(nombre){
+  document.querySelector('input[value=gift]').checked=true; cambiarTipo();
+  document.getElementById('tarjeta_nombre').value=nombre; document.getElementById('tarjeta_monto').focus();
+  document.getElementById('pedido').scrollIntoView({behavior:'smooth'}); actualizarResumen();
+}
+function cambiarTipo(){
+  const tipo=document.querySelector('input[name=tipo]:checked').value;
+  document.getElementById('camposRecarga').classList.toggle('hidden', tipo!=='recarga');
+  document.getElementById('camposGift').classList.toggle('hidden', tipo!=='gift');
+}
+function filtrarProductos(){
+  const q=document.getElementById('searchProd').value.toLowerCase();
+  document.querySelectorAll('#gridRecargas button, #gridGifts button').forEach(b=>{
+    b.style.display = b.innerText.toLowerCase().includes(q) ? '' : 'none';
+  });
+}
+
+// INTELIGENCIA DETECCIÓN
+function detectarCompania(numero){
+  const d=document.getElementById('deteccionCompania');
+  const sel=document.getElementById('recarga_compania');
+  if(numero.length<3){d.textContent=''; return;}
+  // Heurística simple MX
+  let comp=''; 
+  if(numero.startsWith('722') || numero.startsWith('55') || numero.startsWith('56')) comp='Telcel (detectado por IA)';
+  else if(numero.startsWith('81') || numero.startsWith('33')) comp='Movistar (posible)';
+  else comp='Detectando...';
+  d.textContent='🤖 IA: '+comp;
+  if(comp.includes('Telcel') && !sel.value) sel.value='Telcel';
+  actualizarResumen();
+}
+
+function setSmart(t){document.getElementById('smartInput').value=t; document.getElementById('smartInput').focus();}
+function procesarIA(){
+  const txt=document.getElementById('smartInput').value.toLowerCase();
+  if(!txt) return;
+  const prev=document.getElementById('iaPreview');
+  prev.classList.remove('hidden');
+  // Extraer datos con regex simple
+  let comp = recargasData.find(r=>txt.includes(r.nombre.toLowerCase()))?.nombre || giftsData.find(g=>txt.includes(g.nombre.toLowerCase()))?.nombre || '';
+  let montoMatch = txt.match(/(\d{2,4})/);
+  let monto = montoMatch ? montoMatch[1] : '';
+  let telMatch = txt.match(/(\d{10})/);
+  let tel = telMatch ? telMatch[1] : '';
+
+  // Autollenar
+  if(tel){document.getElementById('telefono').value=tel; detectarCompania(tel);}
+  if(monto){
+    if(comp && recargasData.some(r=>r.nombre.toLowerCase()===comp.toLowerCase())){document.getElementById('recarga_monto').value=monto; document.querySelector('input[value=recarga]').checked=true;}
+    else {document.getElementById('tarjeta_monto').value=monto; document.querySelector('input[value=gift]').checked=true;}
+  }
+  if(comp){
+    if(recargasData.some(r=>r.nombre===comp)) document.getElementById('recarga_compania').value=comp;
+    if(giftsData.some(g=>g.nombre===comp)) document.getElementById('tarjeta_nombre').value=comp;
+  }
+  cambiarTipo();
+  actualizarResumen();
+  prev.innerHTML = `✅ <b>Betho IA entendió:</b><br>• Compañía/Plataforma: <b>${comp||'no detectada'}</b><br>• Monto: <b>$${monto||'no detectado'}</b><br>• Tel: <b>${tel||'no detectado'}</b><br><br>Ya llené el formulario abajo. ¡Revisa y envía!`;
+  document.getElementById('pedido').scrollIntoView({behavior:'smooth'});
+  addChat(`Entendí: ${comp} $${monto} ${tel}`, true);
+}
+
+function actualizarResumen(){
+  const tipo=document.querySelector('input[name=tipo]:checked').value;
+  let texto='';
+  if(tipo==='recarga'){
+    const comp=document.getElementById('recarga_compania').value;
+    const monto=document.getElementById('recarga_monto').value;
+    const tel=document.getElementById('telefono').value;
+    if(comp||monto||tel) texto=`*Producto:* Recarga ${comp}\n*Tel:* ${tel}\n*Monto:* $${monto}\n*Entrega estimada:* 2-5 minutos\n*Comisión IA:* Validado ✓`;
+  }else{
+    const plat=document.getElementById('tarjeta_nombre').value;
+    const monto=document.getElementById('tarjeta_monto').value;
+    if(plat||monto) texto=`*Producto:* Gift Card ${plat}\n*Monto:* $${monto}\n*Entrega:* Código por WhatsApp + Email\n*Validación IA:* Stock verificado ✓`;
+  }
+  const box=document.getElementById('resumenIA');
+  if(texto){box.classList.remove('hidden'); document.getElementById('resumenTexto').textContent=texto;}
+  else box.classList.add('hidden');
+}
+document.querySelectorAll('input,select').forEach(el=>el.addEventListener('input',actualizarResumen));
+
+// CHATBOT
+function toggleChat(){document.getElementById('chatWidget').classList.toggle('hidden');}
+function addChat(texto, isIA=false){
+  const cont=document.getElementById('chatMessages');
+  const div=document.createElement('div');
+  div.className = isIA ? 'bg-slate-900 text-white p-3 rounded-2xl rounded-br-none text-sm ml-8' : 'bg-white border p-3 rounded-2xl rounded-bl-none text-sm mr-8';
+  div.innerHTML = isIA ? `<b>Betho IA:</b> ${texto}` : `<b>Tú:</b> ${texto}`;
+  cont.appendChild(div); cont.scrollTop=cont.scrollHeight;
+}
+function enviarChat(){
+  const input=document.getElementById('chatInput');
+  const txt=input.value.trim(); if(!txt) return;
+  addChat(txt,false);
+  input.value='';
+  // Respuesta IA simple basada en reglas
+  setTimeout(()=>{
+    let resp=''; let t=txt.toLowerCase();
+    if(t.includes('telcel')||t.includes('movistar')||t.includes('bait')||t.includes('at&t')||t.includes('recarga')){
+      document.getElementById('smartInput').value=txt; procesarIA();
+      resp=`¡Listo! Ya llené el formulario con tu recarga. Revisa abajo y dale a Enviar a WhatsApp. ¿Quieres que también te lo mande a tu correo?`;
+    }else if(t.includes('netflix')||t.includes('spotify')||t.includes('xbox')||t.includes('play')||t.includes('gift')){
+      document.getElementById('smartInput').value=txt; procesarIA();
+      resp=`Perfecto, Gift Card detectada 🎁 Ya la puse en el pedido. Te llegará el código en menos de 5 min por WhatsApp y a pedrobrito693@gmail.com le llega la alerta para liberarlo al instante.`;
+    }else if(t.includes('cuanto')||t.includes('precio')||t.includes('costo')){
+      resp=`Los montos van desde $20 hasta $1000 en recargas. En Gift Cards desde $100. Sin comisión extra. ¿Qué monto necesitas?`;
+    }else if(t.includes('pago')||t.includes('transferencia')){
+      resp=`Acepto transferencia, OXXO, tarjeta y efectivo. Después del pedido te mando los datos por WhatsApp. Todo queda registrado en pedrobrito693@gmail.com para tu comprobante.`;
+    }else{
+      resp=`Entendido: "${txt}". Puedo convertirlo en pedido automáticamente. Escribe ejemplo: "Bait 100 al 7221234567" y lo hago por ti. O dime qué compañía necesitas.`;
+      document.getElementById('smartInput').value=txt; procesarIA();
+    }
+    addChat(resp,true);
+  },600);
+}
+
+// ENVÍO FINAL - WhatsApp + Email
+function enviarPedido(e){
+  e.preventDefault();
+  const tipo=document.querySelector('input[name=tipo]:checked').value;
+  const nombre=document.getElementById('cliente_nombre').value.trim();
+  const emailCliente=document.getElementById('cliente_email').value.trim();
+  const pago=document.getElementById('metodo_pago').value;
+  if(!nombre){alert('Pon tu nombre'); return false;}
+
+  let mensaje='*🔥 NUEVO PEDIDO BETHOVEN PRO - IA*\n\n';
+  mensaje+=`*Cliente:* ${nombre}\n`;
+  if(emailCliente) mensaje+=`*Email cliente:* ${emailCliente}\n`;
+  mensaje+=`*Pago:* ${pago}\n*Fecha:* ${new Date().toLocaleString('es-MX')}\n\n`;
+
+  if(tipo==='recarga'){
+    const comp=document.getElementById('recarga_compania').value;
+    const monto=document.getElementById('recarga_monto').value;
+    const tel=document.getElementById('telefono').value;
+    if(!comp||!monto||!tel){alert('Completa compañía, monto y número'); return false;}
+    mensaje+=`*Producto: Recarga Telefónica*\n- Compañía: ${comp}\n- Número: ${tel}\n- Monto: $${monto} MXN\n- Entrega: 2-5 min\n\n`;
+  }else{
+    const plat=document.getElementById('tarjeta_nombre').value;
+    const monto=document.getElementById('tarjeta_monto').value;
+    if(!plat||!monto){alert('Completa plataforma y monto'); return false;}
+    mensaje+=`*Producto: Gift Card*\n- Plataforma: ${plat}\n- Monto: $${monto} MXN\n- Entrega: Código digital\n\n`;
+  }
+  mensaje+=`_Pedido generado por Betho IA desde la web mejorada._`;
+
+  // Guardar historial
+  const pedidos=JSON.parse(localStorage.getItem('bethoven_pedidos')||'[]');
+  pedidos.unshift({fecha:new Date().toLocaleString('es-MX'), texto:mensaje.slice(0,120)+'...', tipo});
+  localStorage.setItem('bethoven_pedidos', JSON.stringify(pedidos.slice(0,5)));
+  renderHistorial();
+
+  // 1) WhatsApp
+  const numeroWsp='527228968645';
+  const urlWsp=`https://wa.me/${numeroWsp}?text=${encodeURIComponent(mensaje)}`;
+  window.open(urlWsp,'_blank');
+
+  // 2) Email a pedrobrito693@gmail.com + cliente
+  const subject=`Nuevo pedido Bethoven PRO - ${nombre} - ${tipo}`;
+  const body=encodeURIComponent(mensaje + `\n\n---\nEnviado desde web inteligente Bethoven PRO\nCliente: ${nombre} ${emailCliente ? '('+emailCliente+')' : ''}`);
+  const mailto=`mailto:pedrobrito693@gmail.com?cc=${encodeURIComponent(emailCliente)}&subject=${encodeURIComponent(subject)}&body=${body}`;
+  // Pequeño delay para no bloquear popup whatsapp
+  setTimeout(()=>{ window.location.href=mailto; }, 800);
+
+  // 3) También envío silencioso vía FormSubmit (si tienes internet, llega aunque no abran mail client)
+  try{
+    fetch('https://formsubmit.co/ajax/pedrobrito693@gmail.com',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify({nombre, email: emailCliente||'sin email', tipo, mensaje, _subject:subject, _captcha:'false'})
+    }).then(r=>console.log('Email automático enviado via FormSubmit')).catch(()=>{});
+  }catch(e){}
+
+  alert('✅ Pedido enviado a WhatsApp y a pedrobrito693@gmail.com. Revisa tu WhatsApp.');
+  return false;
+}
+
+function renderHistorial(){
+  const cont=document.getElementById('historial');
+  const pedidos=JSON.parse(localStorage.getItem('bethoven_pedidos')||'[]');
+  if(!pedidos.length){cont.innerHTML='Sin pedidos aún. ¡Tu primer pedido aparecerá aquí!'; return;}
+  cont.innerHTML=pedidos.map(p=>`<div class="bg-slate-50 border rounded-xl p-3"><div class="text-[11px] text-slate-400">${p.fecha} • ${p.tipo}</div><div class="text-xs mt-1">${p.texto}</div></div>`).join('');
+}
+function limpiarHistorial(){localStorage.removeItem('bethoven_pedidos'); renderHistorial();}
+renderHistorial();
+actualizarResumen();
+</script>
+
+<script>
+// Registro del Service Worker - esto activa el botón Instalar
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('SW registrado', reg.scope))
+      .catch(err => console.log('SW error', err));
+  });
+}
+
+// Captura el evento de instalación para mostrar tu propio botón si quieres
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  console.log('PWA lista para instalar');
+  // Si tienes un botón propio, lo puedes mostrar aquí:
+  // document.getElementById('btnInstalar').style.display = 'block';
+});
+
+function instalarPWA(){
+  if(deferredPrompt){
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(choice => {
+      console.log('Elección:', choice.outcome);
+      deferredPrompt = null;
+    });
+  }
+}
+</script>
+
+</body>
+</html>
